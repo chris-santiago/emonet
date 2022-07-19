@@ -18,7 +18,6 @@ logger = make_logger(__name__)
 
 WAVS = DATA_DIR.joinpath("wavs")
 VAD_WAVS = DATA_DIR.joinpath("vad_wavs")
-VAD_WAVS.mkdir(exist_ok=True)
 
 vad_model, vad_utils = torch.hub.load(
     repo_or_dir="snakers4/silero-vad",
@@ -95,4 +94,5 @@ def main():
 
 
 if __name__ == "__main__":
+    VAD_WAVS.mkdir(exist_ok=True)
     main()

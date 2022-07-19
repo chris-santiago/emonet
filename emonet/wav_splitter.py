@@ -17,7 +17,6 @@ logger = make_logger(__name__)
 
 THERAPISTS = ["Michelle Lyn", "Pegah Moghaddam", "Sedara Burson", "Yared Alemu"]
 SPLITS = DATA_DIR.joinpath("vad_splits")  # !! pay attention to me!
-SPLITS.mkdir(exist_ok=True)
 DURATION = 8
 
 
@@ -129,4 +128,5 @@ def main():
 
 
 if __name__ == "__main__":
+    SPLITS.mkdir(exist_ok=True)
     main()

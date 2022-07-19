@@ -1,0 +1,1068 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" />
+
+    <meta name="generator" content="sphinx-5.0.2, furo 2022.06.21"/>
+        <title>pytorch_lightning.core.hooks - emonet</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">emonet</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
+  
+  
+  <span class="sidebar-brand-text">emonet</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quickstart.html#emonet">emonet</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../modules.html">emonet</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../emonet.html">emonet package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/chris-santiago/emonet">Github Repo</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <h1>Source code for pytorch_lightning.core.hooks</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright The PyTorch Lightning team.</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+<span class="sd">&quot;&quot;&quot;Various hooks to be used in the Lightning code.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">from</span> <span class="nn">torch.optim.optimizer</span> <span class="kn">import</span> <span class="n">Optimizer</span>
+
+<span class="kn">from</span> <span class="nn">pytorch_lightning.utilities</span> <span class="kn">import</span> <span class="n">move_data_to_device</span>
+<span class="kn">from</span> <span class="nn">pytorch_lightning.utilities.exceptions</span> <span class="kn">import</span> <span class="n">MisconfigurationException</span>
+<span class="kn">from</span> <span class="nn">pytorch_lightning.utilities.types</span> <span class="kn">import</span> <span class="n">EVAL_DATALOADERS</span><span class="p">,</span> <span class="n">STEP_OUTPUT</span><span class="p">,</span> <span class="n">TRAIN_DATALOADERS</span>
+
+
+<span class="k">class</span> <span class="nc">ModelHooks</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Hooks to be used in LightningModule.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_fit_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the very beginning of fit.</span>
+
+<span class="sd">        If on DDP it is called on every process</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_fit_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the very end of fit.</span>
+
+<span class="sd">        If on DDP it is called on every process</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_train_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the beginning of training after sanity check.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_train_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the end of training before logger experiment is closed.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the beginning of validation.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the end of validation.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_test_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the beginning of testing.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_test_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the end of testing.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the beginning of predicting.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the end of predicting.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_pretrain_routine_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the beginning of the pretrain routine (between fit and train start).</span>
+
+<span class="sd">        - fit</span>
+<span class="sd">        - pretrain_routine start</span>
+<span class="sd">        - pretrain_routine end</span>
+<span class="sd">        - training_start</span>
+
+<span class="sd">        .. deprecated:: v1.6</span>
+<span class="sd">            :meth:`on_pretrain_routine_start` has been deprecated in v1.6 and will be removed in v1.8.</span>
+<span class="sd">            Use ``on_fit_start`` instead.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_pretrain_routine_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the end of the pretrain routine (between fit and train start).</span>
+
+<span class="sd">        - fit</span>
+<span class="sd">        - pretrain_routine start</span>
+<span class="sd">        - pretrain_routine end</span>
+<span class="sd">        - training_start</span>
+
+<span class="sd">        .. deprecated:: v1.6</span>
+<span class="sd">            :meth:`on_pretrain_routine_end` has been deprecated in v1.6 and will be removed in v1.8.</span>
+<span class="sd">            Use ``on_fit_start`` instead.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_train_batch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">unused</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the training loop before anything happens for that batch.</span>
+
+<span class="sd">        If you return -1 here, you will skip training for the rest of the current epoch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch: The batched data as it is returned by the training DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            unused: Deprecated argument. Will be removed in v1.7.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_train_batch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">outputs</span><span class="p">:</span> <span class="n">STEP_OUTPUT</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">unused</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the training loop after the batch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            outputs: The outputs of training_step_end(training_step(x))</span>
+<span class="sd">            batch: The batched data as it is returned by the training DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            unused: Deprecated argument. Will be removed in v1.7.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_batch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the validation loop before anything happens for that batch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch: The batched data as it is returned by the validation DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            dataloader_idx: the index of the dataloader</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_batch_end</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">outputs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">STEP_OUTPUT</span><span class="p">],</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the validation loop after the batch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            outputs: The outputs of validation_step_end(validation_step(x))</span>
+<span class="sd">            batch: The batched data as it is returned by the validation DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            dataloader_idx: the index of the dataloader</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_test_batch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the test loop before anything happens for that batch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch: The batched data as it is returned by the test DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            dataloader_idx: the index of the dataloader</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_test_batch_end</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">outputs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">STEP_OUTPUT</span><span class="p">],</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the test loop after the batch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            outputs: The outputs of test_step_end(test_step(x))</span>
+<span class="sd">            batch: The batched data as it is returned by the test DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            dataloader_idx: the index of the dataloader</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_batch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the predict loop before anything happens for that batch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch: The batched data as it is returned by the test DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            dataloader_idx: the index of the dataloader</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_batch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">outputs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">],</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the predict loop after the batch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            outputs: The outputs of predict_step_end(test_step(x))</span>
+<span class="sd">            batch: The batched data as it is returned by the test DataLoader.</span>
+<span class="sd">            batch_idx: the index of the batch</span>
+<span class="sd">            dataloader_idx: the index of the dataloader</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_model_eval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sets the model to eval during the val loop.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainer</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_model_train</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sets the model to train during the val loop.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainer</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">on_test_model_train</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sets the model to train during the test loop.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainer</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">on_test_model_eval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sets the model to eval during the test loop.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainer</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_model_eval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sets the model to eval during the predict loop.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainer</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">on_epoch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called when either of train/val/test epoch begins.</span>
+
+<span class="sd">        .. deprecated:: v1.6</span>
+<span class="sd">            :meth:`on_epoch_start` has been deprecated in v1.6 and will be removed in v1.8.</span>
+<span class="sd">            Use ``on_&lt;train/validation/test&gt;_epoch_start`` instead.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_epoch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called when either of train/val/test epoch ends.</span>
+
+<span class="sd">        .. deprecated:: v1.6</span>
+<span class="sd">            :meth:`on_epoch_end` has been deprecated in v1.6 and will be removed in v1.8.</span>
+<span class="sd">            Use ``on_&lt;train/validation/test&gt;_epoch_end`` instead.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_train_epoch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the training loop at the very beginning of the epoch.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_train_epoch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the training loop at the very end of the epoch.</span>
+
+<span class="sd">        To access all batch outputs at the end of the epoch, either:</span>
+
+<span class="sd">        1. Implement `training_epoch_end` in the LightningModule OR</span>
+<span class="sd">        2. Cache data across steps on the attribute(s) of the `LightningModule` and access them in this hook</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_epoch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the validation loop at the very beginning of the epoch.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_epoch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the validation loop at the very end of the epoch.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_test_epoch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the test loop at the very beginning of the epoch.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_test_epoch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the test loop at the very end of the epoch.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_epoch_start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the beginning of predicting.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_epoch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the end of predicting.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_before_zero_grad</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">Optimizer</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called after ``training_step()`` and before ``optimizer.zero_grad()``.</span>
+
+<span class="sd">        Called in the training loop after taking an optimizer step and before zeroing grads.</span>
+<span class="sd">        Good place to inspect weight information with weights updated.</span>
+
+<span class="sd">        This is where it is called::</span>
+
+<span class="sd">            for optimizer in optimizers:</span>
+<span class="sd">                out = training_step(...)</span>
+
+<span class="sd">                model.on_before_zero_grad(optimizer) # &lt; ---- called here</span>
+<span class="sd">                optimizer.zero_grad()</span>
+
+<span class="sd">                backward()</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            optimizer: The optimizer for which grads should be zeroed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_before_backward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loss</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called before ``loss.backward()``.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            loss: Loss divided by number of batches for gradient accumulation and scaled if using native AMP.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">on_after_backward</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called after ``loss.backward()`` and before optimizers are stepped.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            If using native AMP, the gradients will not be unscaled at this point.</span>
+<span class="sd">            Use the ``on_before_optimizer_step`` if you need the unscaled gradients.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_before_optimizer_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">:</span> <span class="n">Optimizer</span><span class="p">,</span> <span class="n">optimizer_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called before ``optimizer.step()``.</span>
+
+<span class="sd">        If using gradient accumulation, the hook is called once the gradients have been accumulated.</span>
+<span class="sd">        See: :paramref:`~pytorch_lightning.trainer.Trainer.accumulate_grad_batches`.</span>
+
+<span class="sd">        If using native AMP, the loss will be unscaled before calling this hook.</span>
+<span class="sd">        See these `docs &lt;https://pytorch.org/docs/stable/notes/amp_examples.html#working-with-unscaled-gradients&gt;`__</span>
+<span class="sd">        for more information on the scaling of gradients.</span>
+
+<span class="sd">        If clipping gradients, the gradients will not have been clipped yet.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            optimizer: Current optimizer being used.</span>
+<span class="sd">            optimizer_idx: Index of the current optimizer being used.</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def on_before_optimizer_step(self, optimizer, optimizer_idx):</span>
+<span class="sd">                # example to inspect gradient information in tensorboard</span>
+<span class="sd">                if self.trainer.global_step % 25 == 0:  # don&#39;t make the tf file huge</span>
+<span class="sd">                    for k, v in self.named_parameters():</span>
+<span class="sd">                        self.logger.experiment.add_histogram(</span>
+<span class="sd">                            tag=k, values=v.grad, global_step=self.trainer.global_step</span>
+<span class="sd">                        )</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_post_move_to_device</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called in the ``parameter_validation`` decorator after</span>
+<span class="sd">        :meth:`~pytorch_lightning.core.LightningModule.to` is called. This is a good place to tie weights between</span>
+<span class="sd">        modules after moving them to a device. Can be used when training models with weight sharing properties on</span>
+<span class="sd">        TPU.</span>
+
+<span class="sd">        Addresses the handling of shared weights on TPU:</span>
+<span class="sd">        https://github.com/pytorch/xla/blob/master/TROUBLESHOOTING.md#xla-tensor-quirks</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def on_post_move_to_device(self):</span>
+<span class="sd">                self.decoder.weight = self.encoder.weight</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">configure_sharded_model</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Hook to create modules in a distributed aware context. This is useful for when using sharded plugins,</span>
+<span class="sd">        where we&#39;d like to shard the model instantly, which is useful for extremely large models which can save</span>
+<span class="sd">        memory and initialization time.</span>
+
+<span class="sd">        This hook is called during each of fit/val/test/predict stages in the same process, so ensure that</span>
+<span class="sd">        implementation of this hook is idempotent.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">DataHooks</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Hooks to be used for data related stuff.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Attributes:</span>
+<span class="sd">            prepare_data_per_node:</span>
+<span class="sd">                If True, each LOCAL_RANK=0 will call prepare data.</span>
+<span class="sd">                Otherwise only NODE_RANK=0, LOCAL_RANK=0 will prepare data.</span>
+<span class="sd">            allow_zero_length_dataloader_with_multiple_devices:</span>
+<span class="sd">                If True, dataloader with zero length within local rank is allowed.</span>
+<span class="sd">                Default value is False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">prepare_data_per_node</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">allow_zero_length_dataloader_with_multiple_devices</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">prepare_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Use this to download and prepare data. Downloading and saving data with multiple processes (distributed</span>
+<span class="sd">        settings) will result in corrupted data. Lightning ensures this method is called only within a single</span>
+<span class="sd">        process, so you can safely add your downloading logic within.</span>
+
+<span class="sd">        .. warning:: DO NOT set state to the model (use ``setup`` instead)</span>
+<span class="sd">            since this is NOT called on every device</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def prepare_data(self):</span>
+<span class="sd">                # good</span>
+<span class="sd">                download_data()</span>
+<span class="sd">                tokenize()</span>
+<span class="sd">                etc()</span>
+
+<span class="sd">                # bad</span>
+<span class="sd">                self.split = data_split</span>
+<span class="sd">                self.some_state = some_other_state()</span>
+
+<span class="sd">        In DDP ``prepare_data`` can be called in two ways (using Trainer(prepare_data_per_node)):</span>
+
+<span class="sd">        1. Once per node. This is the default and is only called on LOCAL_RANK=0.</span>
+<span class="sd">        2. Once in total. Only called on GLOBAL_RANK=0.</span>
+
+<span class="sd">        See :ref:`prepare_data_per_node&lt;common/lightning_module:prepare_data_per_node&gt;`.</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            # DEFAULT</span>
+<span class="sd">            # called once per node on LOCAL_RANK=0 of that node</span>
+<span class="sd">            Trainer(prepare_data_per_node=True)</span>
+
+<span class="sd">            # call on GLOBAL_RANK=0 (great for shared file systems)</span>
+<span class="sd">            Trainer(prepare_data_per_node=False)</span>
+
+<span class="sd">        This is called before requesting the dataloaders:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            model.prepare_data()</span>
+<span class="sd">            initialize_distributed()</span>
+<span class="sd">            model.setup(stage)</span>
+<span class="sd">            model.train_dataloader()</span>
+<span class="sd">            model.val_dataloader()</span>
+<span class="sd">            model.test_dataloader()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stage</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the beginning of fit (train + validate), validate, test, or predict. This is a good hook when</span>
+<span class="sd">        you need to build models dynamically or adjust something about them. This hook is called on every process</span>
+<span class="sd">        when using DDP.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            stage: either ``&#39;fit&#39;``, ``&#39;validate&#39;``, ``&#39;test&#39;``, or ``&#39;predict&#39;``</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            class LitModel(...):</span>
+<span class="sd">                def __init__(self):</span>
+<span class="sd">                    self.l1 = None</span>
+
+<span class="sd">                def prepare_data(self):</span>
+<span class="sd">                    download_data()</span>
+<span class="sd">                    tokenize()</span>
+
+<span class="sd">                    # don&#39;t do this</span>
+<span class="sd">                    self.something = else</span>
+
+<span class="sd">                def setup(self, stage):</span>
+<span class="sd">                    data = load_data(...)</span>
+<span class="sd">                    self.l1 = nn.Linear(28, data.num_classes)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">teardown</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stage</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called at the end of fit (train + validate), validate, test, or predict.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            stage: either ``&#39;fit&#39;``, ``&#39;validate&#39;``, ``&#39;test&#39;``, or ``&#39;predict&#39;``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">train_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TRAIN_DATALOADERS</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Implement one or more PyTorch DataLoaders for training.</span>
+
+<span class="sd">        Return:</span>
+<span class="sd">            A collection of :class:`torch.utils.data.DataLoader` specifying training samples.</span>
+<span class="sd">            In the case of multiple dataloaders, please see this :ref:`section &lt;multiple-dataloaders&gt;`.</span>
+
+<span class="sd">        The dataloader you return will not be reloaded unless you set</span>
+<span class="sd">        :paramref:`~pytorch_lightning.trainer.Trainer.reload_dataloaders_every_n_epochs` to</span>
+<span class="sd">        a positive integer.</span>
+
+<span class="sd">        For data processing use the following pattern:</span>
+
+<span class="sd">            - download in :meth:`prepare_data`</span>
+<span class="sd">            - process and split in :meth:`setup`</span>
+
+<span class="sd">        However, the above are only necessary for distributed processing.</span>
+
+<span class="sd">        .. warning:: do not assign state in prepare_data</span>
+
+<span class="sd">        - :meth:`~pytorch_lightning.trainer.trainer.Trainer.fit`</span>
+<span class="sd">        - :meth:`prepare_data`</span>
+<span class="sd">        - :meth:`setup`</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            Lightning adds the correct sampler for distributed and arbitrary hardware.</span>
+<span class="sd">            There is no need to set it yourself.</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            # single dataloader</span>
+<span class="sd">            def train_dataloader(self):</span>
+<span class="sd">                transform = transforms.Compose([transforms.ToTensor(),</span>
+<span class="sd">                                                transforms.Normalize((0.5,), (1.0,))])</span>
+<span class="sd">                dataset = MNIST(root=&#39;/path/to/mnist/&#39;, train=True, transform=transform,</span>
+<span class="sd">                                download=True)</span>
+<span class="sd">                loader = torch.utils.data.DataLoader(</span>
+<span class="sd">                    dataset=dataset,</span>
+<span class="sd">                    batch_size=self.batch_size,</span>
+<span class="sd">                    shuffle=True</span>
+<span class="sd">                )</span>
+<span class="sd">                return loader</span>
+
+<span class="sd">            # multiple dataloaders, return as list</span>
+<span class="sd">            def train_dataloader(self):</span>
+<span class="sd">                mnist = MNIST(...)</span>
+<span class="sd">                cifar = CIFAR(...)</span>
+<span class="sd">                mnist_loader = torch.utils.data.DataLoader(</span>
+<span class="sd">                    dataset=mnist, batch_size=self.batch_size, shuffle=True</span>
+<span class="sd">                )</span>
+<span class="sd">                cifar_loader = torch.utils.data.DataLoader(</span>
+<span class="sd">                    dataset=cifar, batch_size=self.batch_size, shuffle=True</span>
+<span class="sd">                )</span>
+<span class="sd">                # each batch will be a list of tensors: [batch_mnist, batch_cifar]</span>
+<span class="sd">                return [mnist_loader, cifar_loader]</span>
+
+<span class="sd">            # multiple dataloader, return as dict</span>
+<span class="sd">            def train_dataloader(self):</span>
+<span class="sd">                mnist = MNIST(...)</span>
+<span class="sd">                cifar = CIFAR(...)</span>
+<span class="sd">                mnist_loader = torch.utils.data.DataLoader(</span>
+<span class="sd">                    dataset=mnist, batch_size=self.batch_size, shuffle=True</span>
+<span class="sd">                )</span>
+<span class="sd">                cifar_loader = torch.utils.data.DataLoader(</span>
+<span class="sd">                    dataset=cifar, batch_size=self.batch_size, shuffle=True</span>
+<span class="sd">                )</span>
+<span class="sd">                # each batch will be a dict of tensors: {&#39;mnist&#39;: batch_mnist, &#39;cifar&#39;: batch_cifar}</span>
+<span class="sd">                return {&#39;mnist&#39;: mnist_loader, &#39;cifar&#39;: cifar_loader}</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="n">MisconfigurationException</span><span class="p">(</span><span class="s2">&quot;`train_dataloader` must be implemented to be used with the Lightning Trainer&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EVAL_DATALOADERS</span><span class="p">:</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Implement one or multiple PyTorch DataLoaders for testing.</span>
+
+<span class="sd">        For data processing use the following pattern:</span>
+
+<span class="sd">            - download in :meth:`prepare_data`</span>
+<span class="sd">            - process and split in :meth:`setup`</span>
+
+<span class="sd">        However, the above are only necessary for distributed processing.</span>
+
+<span class="sd">        .. warning:: do not assign state in prepare_data</span>
+
+
+<span class="sd">        - :meth:`~pytorch_lightning.trainer.trainer.Trainer.test`</span>
+<span class="sd">        - :meth:`prepare_data`</span>
+<span class="sd">        - :meth:`setup`</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            Lightning adds the correct sampler for distributed and arbitrary hardware.</span>
+<span class="sd">            There is no need to set it yourself.</span>
+
+<span class="sd">        Return:</span>
+<span class="sd">            A :class:`torch.utils.data.DataLoader` or a sequence of them specifying testing samples.</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def test_dataloader(self):</span>
+<span class="sd">                transform = transforms.Compose([transforms.ToTensor(),</span>
+<span class="sd">                                                transforms.Normalize((0.5,), (1.0,))])</span>
+<span class="sd">                dataset = MNIST(root=&#39;/path/to/mnist/&#39;, train=False, transform=transform,</span>
+<span class="sd">                                download=True)</span>
+<span class="sd">                loader = torch.utils.data.DataLoader(</span>
+<span class="sd">                    dataset=dataset,</span>
+<span class="sd">                    batch_size=self.batch_size,</span>
+<span class="sd">                    shuffle=False</span>
+<span class="sd">                )</span>
+
+<span class="sd">                return loader</span>
+
+<span class="sd">            # can also return multiple dataloaders</span>
+<span class="sd">            def test_dataloader(self):</span>
+<span class="sd">                return [loader_a, loader_b, ..., loader_n]</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            If you don&#39;t need a test dataset and a :meth:`test_step`, you don&#39;t need to implement</span>
+<span class="sd">            this method.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            In the case where you return multiple test dataloaders, the :meth:`test_step`</span>
+<span class="sd">            will have an argument ``dataloader_idx`` which matches the order here.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="n">MisconfigurationException</span><span class="p">(</span><span class="s2">&quot;`test_dataloader` must be implemented to be used with the Lightning Trainer&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">val_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EVAL_DATALOADERS</span><span class="p">:</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Implement one or multiple PyTorch DataLoaders for validation.</span>
+
+<span class="sd">        The dataloader you return will not be reloaded unless you set</span>
+<span class="sd">        :paramref:`~pytorch_lightning.trainer.Trainer.reload_dataloaders_every_n_epochs` to</span>
+<span class="sd">        a positive integer.</span>
+
+<span class="sd">        It&#39;s recommended that all data downloads and preparation happen in :meth:`prepare_data`.</span>
+
+<span class="sd">        - :meth:`~pytorch_lightning.trainer.trainer.Trainer.fit`</span>
+<span class="sd">        - :meth:`~pytorch_lightning.trainer.trainer.Trainer.validate`</span>
+<span class="sd">        - :meth:`prepare_data`</span>
+<span class="sd">        - :meth:`setup`</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            Lightning adds the correct sampler for distributed and arbitrary hardware</span>
+<span class="sd">            There is no need to set it yourself.</span>
+
+<span class="sd">        Return:</span>
+<span class="sd">            A :class:`torch.utils.data.DataLoader` or a sequence of them specifying validation samples.</span>
+
+<span class="sd">        Examples::</span>
+
+<span class="sd">            def val_dataloader(self):</span>
+<span class="sd">                transform = transforms.Compose([transforms.ToTensor(),</span>
+<span class="sd">                                                transforms.Normalize((0.5,), (1.0,))])</span>
+<span class="sd">                dataset = MNIST(root=&#39;/path/to/mnist/&#39;, train=False,</span>
+<span class="sd">                                transform=transform, download=True)</span>
+<span class="sd">                loader = torch.utils.data.DataLoader(</span>
+<span class="sd">                    dataset=dataset,</span>
+<span class="sd">                    batch_size=self.batch_size,</span>
+<span class="sd">                    shuffle=False</span>
+<span class="sd">                )</span>
+
+<span class="sd">                return loader</span>
+
+<span class="sd">            # can also return multiple dataloaders</span>
+<span class="sd">            def val_dataloader(self):</span>
+<span class="sd">                return [loader_a, loader_b, ..., loader_n]</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            If you don&#39;t need a validation dataset and a :meth:`validation_step`, you don&#39;t need to</span>
+<span class="sd">            implement this method.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            In the case where you return multiple validation dataloaders, the :meth:`validation_step`</span>
+<span class="sd">            will have an argument ``dataloader_idx`` which matches the order here.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="n">MisconfigurationException</span><span class="p">(</span><span class="s2">&quot;`val_dataloader` must be implemented to be used with the Lightning Trainer&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">predict_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EVAL_DATALOADERS</span><span class="p">:</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Implement one or multiple PyTorch DataLoaders for prediction.</span>
+
+<span class="sd">        It&#39;s recommended that all data downloads and preparation happen in :meth:`prepare_data`.</span>
+
+<span class="sd">        - :meth:`~pytorch_lightning.trainer.trainer.Trainer.predict`</span>
+<span class="sd">        - :meth:`prepare_data`</span>
+<span class="sd">        - :meth:`setup`</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            Lightning adds the correct sampler for distributed and arbitrary hardware</span>
+<span class="sd">            There is no need to set it yourself.</span>
+
+<span class="sd">        Return:</span>
+<span class="sd">            A :class:`torch.utils.data.DataLoader` or a sequence of them specifying prediction samples.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            In the case where you return multiple prediction dataloaders, the :meth:`predict_step`</span>
+<span class="sd">            will have an argument ``dataloader_idx`` which matches the order here.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="n">MisconfigurationException</span><span class="p">(</span>
+            <span class="s2">&quot;`predict_dataloader` must be implemented to be used with the Lightning Trainer&quot;</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">on_train_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called before requesting the train dataloader.</span>
+
+<span class="sd">        .. deprecated:: v1.5</span>
+<span class="sd">            :meth:`on_train_dataloader` is deprecated and will be removed in v1.7.0.</span>
+<span class="sd">            Please use :meth:`train_dataloader()` directly.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_val_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called before requesting the val dataloader.</span>
+
+<span class="sd">        .. deprecated:: v1.5</span>
+<span class="sd">            :meth:`on_val_dataloader` is deprecated and will be removed in v1.7.0.</span>
+<span class="sd">            Please use :meth:`val_dataloader()` directly.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_test_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called before requesting the test dataloader.</span>
+
+<span class="sd">        .. deprecated:: v1.5</span>
+<span class="sd">            :meth:`on_test_dataloader` is deprecated and will be removed in v1.7.0.</span>
+<span class="sd">            Please use :meth:`test_dataloader()` directly.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_predict_dataloader</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called before requesting the predict dataloader.</span>
+
+<span class="sd">        .. deprecated:: v1.5</span>
+<span class="sd">            :meth:`on_predict_dataloader` is deprecated and will be removed in v1.7.0.</span>
+<span class="sd">            Please use :meth:`predict_dataloader()` directly.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">transfer_batch_to_device</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">device</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Override this hook if your :class:`~torch.utils.data.DataLoader` returns tensors wrapped in a custom</span>
+<span class="sd">        data structure.</span>
+
+<span class="sd">        The data types listed below (and any arbitrary nesting of them) are supported out of the box:</span>
+
+<span class="sd">        - :class:`torch.Tensor` or anything that implements `.to(...)`</span>
+<span class="sd">        - :class:`list`</span>
+<span class="sd">        - :class:`dict`</span>
+<span class="sd">        - :class:`tuple`</span>
+<span class="sd">        - :class:`torchtext.data.batch.Batch`</span>
+
+<span class="sd">        For anything else, you need to define how the data is moved to the target device (CPU, GPU, TPU, ...).</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            This hook should only transfer the data and not modify it, nor should it move the data to</span>
+<span class="sd">            any other device than the one passed in as argument (unless you know what you are doing).</span>
+<span class="sd">            To check the current state of execution of this hook you can use</span>
+<span class="sd">            ``self.trainer.training/testing/validating/predicting`` so that you can</span>
+<span class="sd">            add different logic as per your requirement.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            This hook only runs on single GPU training and DDP (no data-parallel).</span>
+<span class="sd">            Data-Parallel support will come in near future.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch: A batch of data that needs to be transferred to a new device.</span>
+<span class="sd">            device: The target device as defined in PyTorch.</span>
+<span class="sd">            dataloader_idx: The index of the dataloader to which the batch belongs.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A reference to the data on the new device.</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def transfer_batch_to_device(self, batch, device, dataloader_idx):</span>
+<span class="sd">                if isinstance(batch, CustomBatch):</span>
+<span class="sd">                    # move all tensors in your custom data structure to the device</span>
+<span class="sd">                    batch.samples = batch.samples.to(device)</span>
+<span class="sd">                    batch.targets = batch.targets.to(device)</span>
+<span class="sd">                elif dataloader_idx == 0:</span>
+<span class="sd">                    # skip device transfer for the first dataloader or anything you wish</span>
+<span class="sd">                    pass</span>
+<span class="sd">                else:</span>
+<span class="sd">                    batch = super().transfer_batch_to_device(data, device, dataloader_idx)</span>
+<span class="sd">                return batch</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            MisconfigurationException:</span>
+<span class="sd">                If using data-parallel, ``Trainer(strategy=&#39;dp&#39;)``.</span>
+
+<span class="sd">        See Also:</span>
+<span class="sd">            - :meth:`move_data_to_device`</span>
+<span class="sd">            - :meth:`apply_to_collection`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">move_data_to_device</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">device</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">on_before_batch_transfer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Override to alter or apply batch augmentations to your batch before it is transferred to the device.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            To check the current state of execution of this hook you can use</span>
+<span class="sd">            ``self.trainer.training/testing/validating/predicting`` so that you can</span>
+<span class="sd">            add different logic as per your requirement.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            This hook only runs on single GPU training and DDP (no data-parallel).</span>
+<span class="sd">            Data-Parallel support will come in near future.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch: A batch of data that needs to be altered or augmented.</span>
+<span class="sd">            dataloader_idx: The index of the dataloader to which the batch belongs.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A batch of data</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def on_before_batch_transfer(self, batch, dataloader_idx):</span>
+<span class="sd">                batch[&#39;x&#39;] = transforms(batch[&#39;x&#39;])</span>
+<span class="sd">                return batch</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            MisconfigurationException:</span>
+<span class="sd">                If using data-parallel, ``Trainer(strategy=&#39;dp&#39;)``.</span>
+
+<span class="sd">        See Also:</span>
+<span class="sd">            - :meth:`on_after_batch_transfer`</span>
+<span class="sd">            - :meth:`transfer_batch_to_device`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">batch</span>
+
+    <span class="k">def</span> <span class="nf">on_after_batch_transfer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">dataloader_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Override to alter or apply batch augmentations to your batch after it is transferred to the device.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            To check the current state of execution of this hook you can use</span>
+<span class="sd">            ``self.trainer.training/testing/validating/predicting`` so that you can</span>
+<span class="sd">            add different logic as per your requirement.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            This hook only runs on single GPU training and DDP (no data-parallel).</span>
+<span class="sd">            Data-Parallel support will come in near future.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch: A batch of data that needs to be altered or augmented.</span>
+<span class="sd">            dataloader_idx: The index of the dataloader to which the batch belongs.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A batch of data</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def on_after_batch_transfer(self, batch, dataloader_idx):</span>
+<span class="sd">                batch[&#39;x&#39;] = gpu_transforms(batch[&#39;x&#39;])</span>
+<span class="sd">                return batch</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            MisconfigurationException:</span>
+<span class="sd">                If using data-parallel, ``Trainer(strategy=&#39;dp&#39;)``.</span>
+
+<span class="sd">        See Also:</span>
+<span class="sd">            - :meth:`on_before_batch_transfer`</span>
+<span class="sd">            - :meth:`transfer_batch_to_device`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">batch</span>
+
+
+<span class="k">class</span> <span class="nc">CheckpointHooks</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Hooks to be used with Checkpointing.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_load_checkpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">checkpoint</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Called by Lightning to restore your model.</span>
+<span class="sd">        If you saved something with :meth:`on_save_checkpoint` this is your chance to restore this.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            checkpoint: Loaded checkpoint</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def on_load_checkpoint(self, checkpoint):</span>
+<span class="sd">                # 99% of the time you don&#39;t need to implement this method</span>
+<span class="sd">                self.something_cool_i_want_to_save = checkpoint[&#39;something_cool_i_want_to_save&#39;]</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            Lightning auto-restores global step, epoch, and train state including amp scaling.</span>
+<span class="sd">            There is no need for you to restore anything regarding training.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">on_save_checkpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">checkpoint</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Called by Lightning when saving a checkpoint to give you a chance to store anything</span>
+<span class="sd">        else you might want to save.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            checkpoint: The full checkpoint dictionary before it gets dumped to a file.</span>
+<span class="sd">                Implementations of this hook can insert additional data into this dictionary.</span>
+
+<span class="sd">        Example::</span>
+
+<span class="sd">            def on_save_checkpoint(self, checkpoint):</span>
+<span class="sd">                # 99% of use cases you don&#39;t need to implement this method</span>
+<span class="sd">                checkpoint[&#39;something_cool_i_want_to_save&#39;] = my_cool_pickable_object</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            Lightning saves all aspects of training (epoch, global step, etc...)</span>
+<span class="sd">            including amp scaling.</span>
+<span class="sd">            There is no need for you to store anything about training.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+</pre></div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2021, Chris Santiago
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/furo.js"></script>
+    </body>
+</html>

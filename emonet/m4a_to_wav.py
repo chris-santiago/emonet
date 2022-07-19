@@ -10,7 +10,6 @@ from emonet.log import make_logger
 from emonet.utils import MAX_WORKERS, async_file_operation
 
 WAVS = DATA_DIR.joinpath("wavs")
-WAVS.mkdir(exist_ok=True)
 RAW_SAMPLES = DATA_DIR.joinpath("voice_labeling_report", "voice_samples")
 
 # FFMPEG = "/opt/homebrew/bin/ffmpeg"  # todo probably don't need for most cases
@@ -44,4 +43,5 @@ def main(max_workers=MAX_WORKERS):
 
 
 if __name__ == "__main__":
+    WAVS.mkdir(exist_ok=True)
     main()
