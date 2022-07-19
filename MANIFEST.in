@@ -1,0 +1,11 @@
+include *.ini
+include *.txt
+include *.md
+include *.rst
+include *.toml
+
+recursive-include tests *.py
+recursive-include emonet *.yaml
+recursive-include emonet *.json
+
+exclude */model-logging.py

@@ -1,0 +1,20 @@
+# Environment for intel-based Mac
+name: emonet
+channels:
+  - pytorch
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.9
+  - pytorch==1.11
+  - torchvision
+  - torchaudio
+  - pytorch-lightning>=1.6.4
+  - transformers
+  - scipy
+  - sentencepiece
+  - wandb
+  - torchmetrics
+  - ipython
+  - pip:
+    - speechbrain

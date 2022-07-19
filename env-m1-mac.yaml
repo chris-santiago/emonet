@@ -1,0 +1,25 @@
+# Environment for arm-based Mac
+name: emonet
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - scipy
+  - sentencepiece
+  - tokenizers
+  - pandas
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - libsndfile
+  - pip:
+      - speechbrain
+      # these are available via conda, as are torch libraries, but env "works" when install via pip
+      - transformers
+      - pytorch-lightning
+      - torchmetrics
+      - wandb

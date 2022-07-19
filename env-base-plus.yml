@@ -1,0 +1,30 @@
+# Environment for intel-based Mac
+# includes train/explore dependencies (found in notebooks)
+name: emonet
+channels:
+  - pytorch
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.9
+  - pytorch==1.11
+  - torchvision
+  - torchaudio
+  - cpuonly
+  - pytorch-lightning>=1.6.4
+  - transformers
+  - scipy
+  - sentencepiece
+  - wandb
+  - torchmetrics
+  - ipython
+  - matplotlib
+  - jupyterlab
+  - pandas
+  - seaborn
+  - scikit-learn
+  - librosa
+  - bokeh
+  - nox
+  - pip:
+    - speechbrain

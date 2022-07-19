@@ -1,0 +1,3518 @@
+{
+  "6529_53113_1602547200": {
+    "file_path": "vad_wavs/6529_53113_1602547200.wav",
+    "file_name": "6529_53113_1602547200.wav",
+    "sample_rate": 16000,
+    "duration": 27.144,
+    "stem": "6529_53113_1602547200",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.0,
+      "sadness": 2.0
+    }
+  },
+  "1940_39117_1603584000": {
+    "file_path": "vad_wavs/1940_39117_1603584000.wav",
+    "file_name": "1940_39117_1603584000.wav",
+    "sample_rate": 16000,
+    "duration": 19.152,
+    "stem": "1940_39117_1603584000",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.25,
+      "sadness": 1.0
+    }
+  },
+  "140406_53113_1572393600": {
+    "file_path": "vad_wavs/140406_53113_1572393600.wav",
+    "file_name": "140406_53113_1572393600.wav",
+    "sample_rate": 16000,
+    "duration": 38.933375,
+    "stem": "140406_53113_1572393600",
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.75,
+      "fear": 1.5,
+      "sadness": 2.75
+    }
+  },
+  "6708_53113_1586908800": {
+    "file_path": "vad_wavs/6708_53113_1586908800.wav",
+    "file_name": "6708_53113_1586908800.wav",
+    "sample_rate": 16000,
+    "duration": 37.594,
+    "stem": "6708_53113_1586908800",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 0.3333333333333333,
+      "fear": 0.6666666666666666,
+      "sadness": 0.6666666666666666
+    }
+  },
+  "29225_35465_1568160000": {
+    "file_path": "vad_wavs/29225_35465_1568160000.wav",
+    "file_name": "29225_35465_1568160000.wav",
+    "sample_rate": 16000,
+    "duration": 31.752,
+    "stem": "29225_35465_1568160000",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.5,
+      "fear": 1.25,
+      "sadness": 2.25
+    }
+  },
+  "8161_39117_863047773": {
+    "file_path": "vad_wavs/8161_39117_863047773.wav",
+    "file_name": "8161_39117_863047773.wav",
+    "sample_rate": 16000,
+    "duration": 38.1981875,
+    "stem": "8161_39117_863047773",
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 1.6666666666666667,
+      "fear": 2.0,
+      "sadness": 0.6666666666666666
+    }
+  },
+  "4205_39117_1595894400": {
+    "file_path": "vad_wavs/4205_39117_1595894400.wav",
+    "file_name": "4205_39117_1595894400.wav",
+    "sample_rate": 16000,
+    "duration": 29.3726875,
+    "stem": "4205_39117_1595894400",
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.25,
+      "sadness": 2.75
+    }
+  },
+  "4644_53113_1604275200": {
+    "file_path": "vad_wavs/4644_53113_1604275200.wav",
+    "file_name": "4644_53113_1604275200.wav",
+    "sample_rate": 16000,
+    "duration": 22.164,
+    "stem": "4644_53113_1604275200",
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.5,
+      "sadness": 0.5
+    }
+  },
+  "6529_53113_2065172895": {
+    "file_path": "vad_wavs/6529_53113_2065172895.wav",
+    "file_name": "6529_53113_2065172895.wav",
+    "sample_rate": 16000,
+    "duration": 30.864,
+    "stem": "6529_53113_2065172895",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.0,
+      "sadness": 1.3333333333333333
+    }
+  },
+  "57545_39117_1595980800": {
+    "file_path": "vad_wavs/57545_39117_1595980800.wav",
+    "file_name": "57545_39117_1595980800.wav",
+    "sample_rate": 16000,
+    "duration": 36.09,
+    "stem": "57545_39117_1595980800",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 0.5,
+      "sadness": 1.5
+    }
+  },
+  "57545_39117_1595289600": {
+    "file_path": "vad_wavs/57545_39117_1595289600.wav",
+    "file_name": "57545_39117_1595289600.wav",
+    "sample_rate": 16000,
+    "duration": 36.42,
+    "stem": "57545_39117_1595289600",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 0.5,
+      "sadness": 2.25
+    }
+  },
+  "3791_53113_1597622400": {
+    "file_path": "vad_wavs/3791_53113_1597622400.wav",
+    "file_name": "3791_53113_1597622400.wav",
+    "sample_rate": 16000,
+    "duration": 38.2086875,
+    "stem": "3791_53113_1597622400",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.0,
+      "sadness": 1.3333333333333333
+    }
+  },
+  "4493_53113_1575849600": {
+    "file_path": "vad_wavs/4493_53113_1575849600.wav",
+    "file_name": "4493_53113_1575849600.wav",
+    "sample_rate": 16000,
+    "duration": 44.327375,
+    "stem": "4493_53113_1575849600",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.3333333333333333,
+      "sadness": 2.6666666666666665
+    }
+  },
+  "4911_53113_1568160000": {
+    "file_path": "vad_wavs/4911_53113_1568160000.wav",
+    "file_name": "4911_53113_1568160000.wav",
+    "sample_rate": 16000,
+    "duration": 51.732,
+    "stem": "4911_53113_1568160000",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.3333333333333333,
+      "fear": 2.0,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "8448_53113_1597190400": {
+    "file_path": "vad_wavs/8448_53113_1597190400.wav",
+    "file_name": "8448_53113_1597190400.wav",
+    "sample_rate": 16000,
+    "duration": 29.898,
+    "stem": "8448_53113_1597190400",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.3333333333333333,
+      "fear": 1.3333333333333333,
+      "sadness": 2.0
+    }
+  },
+  "8841_39117_296267405": {
+    "file_path": "vad_wavs/8841_39117_296267405.wav",
+    "file_name": "8841_39117_296267405.wav",
+    "sample_rate": 16000,
+    "duration": 25.4926875,
+    "stem": "8841_39117_296267405",
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 1.5,
+      "fear": 2.25,
+      "sadness": 0.5
+    }
+  },
+  "1173_KH1001_765576337": {
+    "file_path": "vad_wavs/1173_KH1001_765576337.wav",
+    "file_name": "1173_KH1001_765576337.wav",
+    "sample_rate": 16000,
+    "duration": 62.1806875,
+    "stem": "1173_KH1001_765576337",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 1.25,
+      "fear": 1.75,
+      "sadness": 1.0
+    }
+  },
+  "4644_53113_1587600000": {
+    "file_path": "vad_wavs/4644_53113_1587600000.wav",
+    "file_name": "4644_53113_1587600000.wav",
+    "sample_rate": 16000,
+    "duration": 25.374,
+    "stem": "4644_53113_1587600000",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.3333333333333333,
+      "fear": 1.0,
+      "sadness": 1.6666666666666667
+    }
+  },
+  "6709_53113_1569542400": {
+    "file_path": "vad_wavs/6709_53113_1569542400.wav",
+    "file_name": "6709_53113_1569542400.wav",
+    "sample_rate": 16000,
+    "duration": 8.28,
+    "stem": "6709_53113_1569542400",
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 2.3333333333333335,
+      "sadness": 2.6666666666666665
+    }
+  },
+  "8161_39117_1525414756": {
+    "file_path": "vad_wavs/8161_39117_1525414756.wav",
+    "file_name": "8161_39117_1525414756.wav",
+    "sample_rate": 16000,
+    "duration": 28.8,
+    "stem": "8161_39117_1525414756",
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "medium",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.75,
+      "sadness": 0.25
+    }
+  },
+  "68682_26501_1958196237": {
+    "file_path": "vad_wavs/68682_26501_1958196237.wav",
+    "file_name": "68682_26501_1958196237.wav",
+    "sample_rate": 16000,
+    "duration": 0.444,
+    "stem": "68682_26501_1958196237",
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.5,
+      "fear": 2.0,
+      "sadness": 2.0
+    }
+  },
+  "8646_53113_2305815636": {
+    "file_path": "vad_wavs/8646_53113_2305815636.wav",
+    "file_name": "8646_53113_2305815636.wav",
+    "sample_rate": 16000,
+    "duration": 39.8086875,
+    "stem": "8646_53113_2305815636",
+    "Pegah Moghaddam": {
+      "fear": "high",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 2.25,
+      "sadness": 2.5
+    }
+  },
+  "73635_66945_1535173726": {
+    "file_path": "vad_wavs/73635_66945_1535173726.wav",
+    "file_name": "73635_66945_1535173726.wav",
+    "sample_rate": 16000,
+    "duration": 51.342,
+    "stem": "73635_66945_1535173726",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.25,
+      "sadness": 3.0
+    }
+  },
+  "5370_39117_1599955200": {
+    "file_path": "vad_wavs/5370_39117_1599955200.wav",
+    "file_name": "5370_39117_1599955200.wav",
+    "sample_rate": 16000,
+    "duration": 47.64,
+    "stem": "5370_39117_1599955200",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.75,
+      "sadness": 2.75
+    }
+  },
+  "4644_53113_1601856000": {
+    "file_path": "vad_wavs/4644_53113_1601856000.wav",
+    "file_name": "4644_53113_1601856000.wav",
+    "sample_rate": 16000,
+    "duration": 29.004,
+    "stem": "4644_53113_1601856000",
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.3333333333333333,
+      "fear": 1.3333333333333333,
+      "sadness": 1.0
+    }
+  },
+  "8953_39117_1330540985": {
+    "file_path": "vad_wavs/8953_39117_1330540985.wav",
+    "file_name": "8953_39117_1330540985.wav",
+    "sample_rate": 16000,
+    "duration": 10.308,
+    "stem": "8953_39117_1330540985",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "medium",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.5,
+      "sadness": 0.75
+    }
+  },
+  "8646_53113_1597622400": {
+    "file_path": "vad_wavs/8646_53113_1597622400.wav",
+    "file_name": "8646_53113_1597622400.wav",
+    "sample_rate": 16000,
+    "duration": 43.026,
+    "stem": "8646_53113_1597622400",
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.6666666666666667,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "7957_39117_1595116800": {
+    "file_path": "vad_wavs/7957_39117_1595116800.wav",
+    "file_name": "7957_39117_1595116800.wav",
+    "sample_rate": 16000,
+    "duration": 30.54,
+    "stem": "7957_39117_1595116800",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 0.75,
+      "sadness": 2.0
+    }
+  },
+  "1940_39117_1588723200": {
+    "file_path": "vad_wavs/1940_39117_1588723200.wav",
+    "file_name": "1940_39117_1588723200.wav",
+    "sample_rate": 16000,
+    "duration": 29.136,
+    "stem": "1940_39117_1588723200",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 1.0,
+      "sadness": 1.25
+    }
+  },
+  "6531_53113_1590105600": {
+    "file_path": "vad_wavs/6531_53113_1590105600.wav",
+    "file_name": "6531_53113_1590105600.wav",
+    "sample_rate": 16000,
+    "duration": 31.184,
+    "stem": "6531_53113_1590105600",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.3333333333333333,
+      "fear": 0.3333333333333333,
+      "sadness": 0.3333333333333333
+    }
+  },
+  "1940_39117_1595203200": {
+    "file_path": "vad_wavs/1940_39117_1595203200.wav",
+    "file_name": "1940_39117_1595203200.wav",
+    "sample_rate": 16000,
+    "duration": 19.764,
+    "stem": "1940_39117_1595203200",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.25,
+      "sadness": 1.0
+    }
+  },
+  "8953_39117_1924744634": {
+    "file_path": "vad_wavs/8953_39117_1924744634.wav",
+    "file_name": "8953_39117_1924744634.wav",
+    "sample_rate": 16000,
+    "duration": 10.788,
+    "stem": "8953_39117_1924744634",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 0.6666666666666666,
+      "sadness": 0.3333333333333333
+    }
+  },
+  "44144_53113_1569369600": {
+    "file_path": "vad_wavs/44144_53113_1569369600.wav",
+    "file_name": "44144_53113_1569369600.wav",
+    "sample_rate": 16000,
+    "duration": 48.024,
+    "stem": "44144_53113_1569369600",
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 0.0,
+      "sadness": 2.0
+    }
+  },
+  "7957_39117_1594598400": {
+    "file_path": "vad_wavs/7957_39117_1594598400.wav",
+    "file_name": "7957_39117_1594598400.wav",
+    "sample_rate": 16000,
+    "duration": 29.136,
+    "stem": "7957_39117_1594598400",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 0.75,
+      "sadness": 2.5
+    }
+  },
+  "8161_39117_1447942092": {
+    "file_path": "vad_wavs/8161_39117_1447942092.wav",
+    "file_name": "8161_39117_1447942092.wav",
+    "sample_rate": 16000,
+    "duration": 38.787375,
+    "stem": "8161_39117_1447942092",
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 1.3333333333333333,
+      "fear": 2.3333333333333335,
+      "sadness": 1.0
+    }
+  },
+  "4644_53113_1590969600": {
+    "file_path": "vad_wavs/4644_53113_1590969600.wav",
+    "file_name": "4644_53113_1590969600.wav",
+    "sample_rate": 16000,
+    "duration": 20.802,
+    "stem": "4644_53113_1590969600",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 0.6666666666666666,
+      "sadness": 1.0
+    }
+  },
+  "7794_39117_1491160542": {
+    "file_path": "vad_wavs/7794_39117_1491160542.wav",
+    "file_name": "7794_39117_1491160542.wav",
+    "sample_rate": 16000,
+    "duration": 1.656,
+    "stem": "7794_39117_1491160542",
+    "Sedara Burson": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 2.75,
+      "fear": 2.0,
+      "sadness": 2.25
+    }
+  },
+  "6461_39117_1226457776": {
+    "file_path": "vad_wavs/6461_39117_1226457776.wav",
+    "file_name": "6461_39117_1226457776.wav",
+    "sample_rate": 16000,
+    "duration": 17.268,
+    "stem": "6461_39117_1226457776",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.5,
+      "sadness": 2.5
+    }
+  },
+  "57545_39117_1591056000": {
+    "file_path": "vad_wavs/57545_39117_1591056000.wav",
+    "file_name": "57545_39117_1591056000.wav",
+    "sample_rate": 16000,
+    "duration": 33.288,
+    "stem": "57545_39117_1591056000",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 0.5,
+      "sadness": 1.25
+    }
+  },
+  "4538_53113_1595203200": {
+    "file_path": "vad_wavs/4538_53113_1595203200.wav",
+    "file_name": "4538_53113_1595203200.wav",
+    "sample_rate": 16000,
+    "duration": 47.988,
+    "stem": "4538_53113_1595203200",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.3333333333333333,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "53756_53796_1568246400": {
+    "file_path": "vad_wavs/53756_53796_1568246400.wav",
+    "file_name": "53756_53796_1568246400.wav",
+    "sample_rate": 16000,
+    "duration": 49.218,
+    "stem": "53756_53796_1568246400",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 2.0,
+      "fear": 1.25,
+      "sadness": 1.0
+    }
+  },
+  "53756_53796_1568073600": {
+    "file_path": "vad_wavs/53756_53796_1568073600.wav",
+    "file_name": "53756_53796_1568073600.wav",
+    "sample_rate": 16000,
+    "duration": 49.218,
+    "stem": "53756_53796_1568073600",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 2.0,
+      "fear": 1.25,
+      "sadness": 1.25
+    }
+  },
+  "56838_53113_1587513600": {
+    "file_path": "vad_wavs/56838_53113_1587513600.wav",
+    "file_name": "56838_53113_1587513600.wav",
+    "sample_rate": 16000,
+    "duration": 33.648,
+    "stem": "56838_53113_1587513600",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "low",
+      "neutral": "low",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.6666666666666667,
+      "sadness": 2.6666666666666665
+    }
+  },
+  "1940_39117_1828674801": {
+    "file_path": "vad_wavs/1940_39117_1828674801.wav",
+    "file_name": "1940_39117_1828674801.wav",
+    "sample_rate": 16000,
+    "duration": 22.6526875,
+    "stem": "1940_39117_1828674801",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 1.25,
+      "sadness": 0.75
+    }
+  },
+  "4205_39117_1591660800": {
+    "file_path": "vad_wavs/4205_39117_1591660800.wav",
+    "file_name": "4205_39117_1591660800.wav",
+    "sample_rate": 16000,
+    "duration": 39.348,
+    "stem": "4205_39117_1591660800",
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "medium",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 1.75,
+      "fear": 2.5,
+      "sadness": 1.5
+    }
+  },
+  "6461_39117_2380262623": {
+    "file_path": "vad_wavs/6461_39117_2380262623.wav",
+    "file_name": "6461_39117_2380262623.wav",
+    "sample_rate": 16000,
+    "duration": 11.904,
+    "stem": "6461_39117_2380262623",
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 2.3333333333333335,
+      "sadness": 2.6666666666666665
+    }
+  },
+  "8447_53113_1604448000": {
+    "file_path": "vad_wavs/8447_53113_1604448000.wav",
+    "file_name": "8447_53113_1604448000.wav",
+    "sample_rate": 16000,
+    "duration": 38.604,
+    "stem": "8447_53113_1604448000",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.6666666666666667,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "6708_53113_1588723200": {
+    "file_path": "vad_wavs/6708_53113_1588723200.wav",
+    "file_name": "6708_53113_1588723200.wav",
+    "sample_rate": 16000,
+    "duration": 30.799375,
+    "stem": "6708_53113_1588723200",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.3333333333333333,
+      "fear": 0.6666666666666666,
+      "sadness": 1.6666666666666667
+    }
+  },
+  "6461_39117_781953667": {
+    "file_path": "vad_wavs/6461_39117_781953667.wav",
+    "file_name": "6461_39117_781953667.wav",
+    "sample_rate": 16000,
+    "duration": 33.864,
+    "stem": "6461_39117_781953667",
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 2.25,
+      "sadness": 2.75
+    }
+  },
+  "8447_53113_1600214400": {
+    "file_path": "vad_wavs/8447_53113_1600214400.wav",
+    "file_name": "8447_53113_1600214400.wav",
+    "sample_rate": 16000,
+    "duration": 32.39,
+    "stem": "8447_53113_1600214400",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.6666666666666667,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "53842_35465_1569974400": {
+    "file_path": "vad_wavs/53842_35465_1569974400.wav",
+    "file_name": "53842_35465_1569974400.wav",
+    "sample_rate": 16000,
+    "duration": 102.48,
+    "stem": "53842_35465_1569974400",
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "low",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.75,
+      "sadness": 2.5
+    }
+  },
+  "57545_39117_1606262400": {
+    "file_path": "vad_wavs/57545_39117_1606262400.wav",
+    "file_name": "57545_39117_1606262400.wav",
+    "sample_rate": 16000,
+    "duration": 29.88,
+    "stem": "57545_39117_1606262400",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 0.75,
+      "sadness": 2.0
+    }
+  },
+  "8953_39117_3922016278": {
+    "file_path": "vad_wavs/8953_39117_3922016278.wav",
+    "file_name": "8953_39117_3922016278.wav",
+    "sample_rate": 16000,
+    "duration": 27.036,
+    "stem": "8953_39117_3922016278",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 0.75,
+      "sadness": 1.25
+    }
+  },
+  "6709_53113_1589328000": {
+    "file_path": "vad_wavs/6709_53113_1589328000.wav",
+    "file_name": "6709_53113_1589328000.wav",
+    "sample_rate": 16000,
+    "duration": 63.991375,
+    "stem": "6709_53113_1589328000",
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.3333333333333333,
+      "fear": 2.0,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "139_39117_1601251200": {
+    "file_path": "vad_wavs/139_39117_1601251200.wav",
+    "file_name": "139_39117_1601251200.wav",
+    "sample_rate": 16000,
+    "duration": 44.244,
+    "stem": "139_39117_1601251200",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.25,
+      "sadness": 0.5
+    }
+  },
+  "8841_39117_2151610410": {
+    "file_path": "vad_wavs/8841_39117_2151610410.wav",
+    "file_name": "8841_39117_2151610410.wav",
+    "sample_rate": 16000,
+    "duration": 49.068,
+    "stem": "8841_39117_2151610410",
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 1.75,
+      "fear": 1.75,
+      "sadness": 1.0
+    }
+  },
+  "4911_53113_1579737600": {
+    "file_path": "vad_wavs/4911_53113_1579737600.wav",
+    "file_name": "4911_53113_1579737600.wav",
+    "sample_rate": 16000,
+    "duration": 33.768,
+    "stem": "4911_53113_1579737600",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 0.3333333333333333,
+      "fear": 0.3333333333333333,
+      "sadness": 1.3333333333333333
+    }
+  },
+  "53490_53113_1568160000": {
+    "file_path": "vad_wavs/53490_53113_1568160000.wav",
+    "file_name": "53490_53113_1568160000.wav",
+    "sample_rate": 16000,
+    "duration": 37.7486875,
+    "stem": "53490_53113_1568160000",
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "high",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.75,
+      "sadness": 2.0
+    }
+  },
+  "8161_39117_592551866": {
+    "file_path": "vad_wavs/8161_39117_592551866.wav",
+    "file_name": "8161_39117_592551866.wav",
+    "sample_rate": 16000,
+    "duration": 42.106,
+    "stem": "8161_39117_592551866",
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.6666666666666667,
+      "sadness": 0.3333333333333333
+    }
+  },
+  "4911_53113_1570060800": {
+    "file_path": "vad_wavs/4911_53113_1570060800.wav",
+    "file_name": "4911_53113_1570060800.wav",
+    "sample_rate": 16000,
+    "duration": 47.856,
+    "stem": "4911_53113_1570060800",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 2.0,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "71291_72285_798976632": {
+    "file_path": "vad_wavs/71291_72285_798976632.wav",
+    "file_name": "71291_72285_798976632.wav",
+    "sample_rate": 16000,
+    "duration": 32.568,
+    "stem": "71291_72285_798976632",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.25,
+      "sadness": 1.25
+    }
+  },
+  "52757_53113_1576108800": {
+    "file_path": "vad_wavs/52757_53113_1576108800.wav",
+    "file_name": "52757_53113_1576108800.wav",
+    "sample_rate": 16000,
+    "duration": 12.972,
+    "stem": "52757_53113_1576108800",
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.5,
+      "fear": 1.75,
+      "sadness": 2.25
+    }
+  },
+  "4205_39117_3077758207": {
+    "file_path": "vad_wavs/4205_39117_3077758207.wav",
+    "file_name": "4205_39117_3077758207.wav",
+    "sample_rate": 16000,
+    "duration": 18.336,
+    "stem": "4205_39117_3077758207",
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.0,
+      "sadness": 2.5
+    }
+  },
+  "8161_39117_1195942181": {
+    "file_path": "vad_wavs/8161_39117_1195942181.wav",
+    "file_name": "8161_39117_1195942181.wav",
+    "sample_rate": 16000,
+    "duration": 29.8246875,
+    "stem": "8161_39117_1195942181",
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.3333333333333333,
+      "fear": 1.6666666666666667,
+      "sadness": 2.0
+    }
+  },
+  "4205_39117_2254249761": {
+    "file_path": "vad_wavs/4205_39117_2254249761.wav",
+    "file_name": "4205_39117_2254249761.wav",
+    "sample_rate": 16000,
+    "duration": 19.162,
+    "stem": "4205_39117_2254249761",
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.5,
+      "sadness": 1.25
+    }
+  },
+  "6529_53113_1599091200": {
+    "file_path": "vad_wavs/6529_53113_1599091200.wav",
+    "file_name": "6529_53113_1599091200.wav",
+    "sample_rate": 16000,
+    "duration": 37.135375,
+    "stem": "6529_53113_1599091200",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.6666666666666667,
+      "sadness": 1.6666666666666667
+    }
+  },
+  "4205_39117_3040760693": {
+    "file_path": "vad_wavs/4205_39117_3040760693.wav",
+    "file_name": "4205_39117_3040760693.wav",
+    "sample_rate": 16000,
+    "duration": 28.668,
+    "stem": "4205_39117_3040760693",
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.0,
+      "sadness": 2.5
+    }
+  },
+  "1940_39117_864306290": {
+    "file_path": "vad_wavs/1940_39117_864306290.wav",
+    "file_name": "1940_39117_864306290.wav",
+    "sample_rate": 16000,
+    "duration": 22.8086875,
+    "stem": "1940_39117_864306290",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.25,
+      "sadness": 0.75
+    }
+  },
+  "6461_39117_1604966400": {
+    "file_path": "vad_wavs/6461_39117_1604966400.wav",
+    "file_name": "6461_39117_1604966400.wav",
+    "sample_rate": 16000,
+    "duration": 64.356,
+    "stem": "6461_39117_1604966400",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.25,
+      "fear": 2.25,
+      "sadness": 2.5
+    }
+  },
+  "8161_39117_420500410": {
+    "file_path": "vad_wavs/8161_39117_420500410.wav",
+    "file_name": "8161_39117_420500410.wav",
+    "sample_rate": 16000,
+    "duration": 28.43,
+    "stem": "8161_39117_420500410",
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 2.0,
+      "fear": 2.6666666666666665,
+      "sadness": 1.0
+    }
+  },
+  "5370_39117_1168932072": {
+    "file_path": "vad_wavs/5370_39117_1168932072.wav",
+    "file_name": "5370_39117_1168932072.wav",
+    "sample_rate": 16000,
+    "duration": 34.716,
+    "stem": "5370_39117_1168932072",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.5,
+      "sadness": 1.75
+    }
+  },
+  "8161_39117_2235752419": {
+    "file_path": "vad_wavs/8161_39117_2235752419.wav",
+    "file_name": "8161_39117_2235752419.wav",
+    "sample_rate": 16000,
+    "duration": 42.432,
+    "stem": "8161_39117_2235752419",
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.6666666666666667,
+      "fear": 2.0,
+      "sadness": 1.3333333333333333
+    }
+  },
+  "38521_53113_1570579200": {
+    "file_path": "vad_wavs/38521_53113_1570579200.wav",
+    "file_name": "38521_53113_1570579200.wav",
+    "sample_rate": 16000,
+    "duration": 40.56,
+    "stem": "38521_53113_1570579200",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 0.75,
+      "sadness": 1.75
+    }
+  },
+  "6709_53113_1576800000": {
+    "file_path": "vad_wavs/6709_53113_1576800000.wav",
+    "file_name": "6709_53113_1576800000.wav",
+    "sample_rate": 16000,
+    "duration": 43.59,
+    "stem": "6709_53113_1576800000",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.3333333333333333,
+      "fear": 2.3333333333333335,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "8447_53113_1603843200": {
+    "file_path": "vad_wavs/8447_53113_1603843200.wav",
+    "file_name": "8447_53113_1603843200.wav",
+    "sample_rate": 16000,
+    "duration": 28.68,
+    "stem": "8447_53113_1603843200",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.3333333333333333,
+      "fear": 1.3333333333333333,
+      "sadness": 1.0
+    }
+  },
+  "6531_53113_1588809600": {
+    "file_path": "vad_wavs/6531_53113_1588809600.wav",
+    "file_name": "6531_53113_1588809600.wav",
+    "sample_rate": 16000,
+    "duration": 31.26,
+    "stem": "6531_53113_1588809600",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.0,
+      "fear": 0.3333333333333333,
+      "sadness": 0.3333333333333333
+    }
+  },
+  "4911_53113_1574294400": {
+    "file_path": "vad_wavs/4911_53113_1574294400.wav",
+    "file_name": "4911_53113_1574294400.wav",
+    "sample_rate": 16000,
+    "duration": 45.564,
+    "stem": "4911_53113_1574294400",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.6666666666666667,
+      "fear": 1.6666666666666667,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "1940_39117_2110406965": {
+    "file_path": "vad_wavs/1940_39117_2110406965.wav",
+    "file_name": "1940_39117_2110406965.wav",
+    "sample_rate": 16000,
+    "duration": 6.42,
+    "stem": "1940_39117_2110406965",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 1.5,
+      "sadness": 1.25
+    }
+  },
+  "1940_39117_1592092800": {
+    "file_path": "vad_wavs/1940_39117_1592092800.wav",
+    "file_name": "1940_39117_1592092800.wav",
+    "sample_rate": 16000,
+    "duration": 28.332,
+    "stem": "1940_39117_1592092800",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.75,
+      "sadness": 1.75
+    }
+  },
+  "4205_39117_1601942400": {
+    "file_path": "vad_wavs/4205_39117_1601942400.wav",
+    "file_name": "4205_39117_1601942400.wav",
+    "sample_rate": 16000,
+    "duration": 28.572,
+    "stem": "4205_39117_1601942400",
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "low",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.25,
+      "fear": 1.25,
+      "sadness": 1.75
+    }
+  },
+  "8161_39117_1711604980": {
+    "file_path": "vad_wavs/8161_39117_1711604980.wav",
+    "file_name": "8161_39117_1711604980.wav",
+    "sample_rate": 16000,
+    "duration": 34.798,
+    "stem": "8161_39117_1711604980",
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 2.0,
+      "fear": 2.6666666666666665,
+      "sadness": 1.3333333333333333
+    }
+  },
+  "6382_53113_1572825600": {
+    "file_path": "vad_wavs/6382_53113_1572825600.wav",
+    "file_name": "6382_53113_1572825600.wav",
+    "sample_rate": 16000,
+    "duration": 55.9806875,
+    "stem": "6382_53113_1572825600",
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.6666666666666667,
+      "sadness": 1.3333333333333333
+    }
+  },
+  "4538_53113_1590537600": {
+    "file_path": "vad_wavs/4538_53113_1590537600.wav",
+    "file_name": "4538_53113_1590537600.wav",
+    "sample_rate": 16000,
+    "duration": 51.1766875,
+    "stem": "4538_53113_1590537600",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.6666666666666667,
+      "sadness": 1.6666666666666667
+    }
+  },
+  "8646_53113_1600041600": {
+    "file_path": "vad_wavs/8646_53113_1600041600.wav",
+    "file_name": "8646_53113_1600041600.wav",
+    "sample_rate": 16000,
+    "duration": 40.512,
+    "stem": "8646_53113_1600041600",
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 2.0,
+      "sadness": 2.6666666666666665
+    }
+  },
+  "139_39117_1599091200": {
+    "file_path": "vad_wavs/139_39117_1599091200.wav",
+    "file_name": "139_39117_1599091200.wav",
+    "sample_rate": 16000,
+    "duration": 37.992,
+    "stem": "139_39117_1599091200",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "none"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.0,
+      "sadness": 1.0
+    }
+  },
+  "1940_39117_1594512000": {
+    "file_path": "vad_wavs/1940_39117_1594512000.wav",
+    "file_name": "1940_39117_1594512000.wav",
+    "sample_rate": 16000,
+    "duration": 21.443375,
+    "stem": "1940_39117_1594512000",
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "none"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "none"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.0,
+      "sadness": 1.0
+    }
+  },
+  "52757_53113_1574812800": {
+    "file_path": "vad_wavs/52757_53113_1574812800.wav",
+    "file_name": "52757_53113_1574812800.wav",
+    "sample_rate": 16000,
+    "duration": 31.992,
+    "stem": "52757_53113_1574812800",
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 0.75,
+      "fear": 1.0,
+      "sadness": 1.5
+    }
+  },
+  "52756_53113_1569196800": {
+    "file_path": "vad_wavs/52756_53113_1569196800.wav",
+    "file_name": "52756_53113_1569196800.wav",
+    "sample_rate": 16000,
+    "duration": 96.456,
+    "stem": "52756_53113_1569196800",
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.5,
+      "fear": 1.75,
+      "sadness": 2.75
+    }
+  },
+  "44144_53113_1569974400": {
+    "file_path": "vad_wavs/44144_53113_1569974400.wav",
+    "file_name": "44144_53113_1569974400.wav",
+    "sample_rate": 16000,
+    "duration": 45.926,
+    "stem": "44144_53113_1569974400",
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 0.0,
+      "sadness": 2.0
+    }
+  },
+  "8646_53113_1439946998": {
+    "file_path": "vad_wavs/8646_53113_1439946998.wav",
+    "file_name": "8646_53113_1439946998.wav",
+    "sample_rate": 16000,
+    "duration": 27.66,
+    "stem": "8646_53113_1439946998",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 1.3333333333333333,
+      "fear": 2.3333333333333335,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "8646_53113_1597017600": {
+    "file_path": "vad_wavs/8646_53113_1597017600.wav",
+    "file_name": "8646_53113_1597017600.wav",
+    "sample_rate": 16000,
+    "duration": 60.6006875,
+    "stem": "8646_53113_1597017600",
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "low",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.6666666666666667,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "4205_39117_1603152000": {
+    "file_path": "vad_wavs/4205_39117_1603152000.wav",
+    "file_name": "4205_39117_1603152000.wav",
+    "sample_rate": 16000,
+    "duration": 25.572,
+    "stem": "4205_39117_1603152000",
+    "Michelle Lyn": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "medium",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "medium",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 1.0,
+      "fear": 1.25,
+      "sadness": 2.0
+    }
+  },
+  "8161_39117_33944129": {
+    "file_path": "vad_wavs/8161_39117_33944129.wav",
+    "file_name": "8161_39117_33944129.wav",
+    "sample_rate": 16000,
+    "duration": 24.672,
+    "stem": "8161_39117_33944129",
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "medium",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 2.6666666666666665,
+      "fear": 2.0,
+      "sadness": 1.3333333333333333
+    }
+  },
+  "9926_39117_3795456158": {
+    "file_path": "vad_wavs/9926_39117_3795456158.wav",
+    "file_name": "9926_39117_3795456158.wav",
+    "sample_rate": 16000,
+    "duration": 30.192,
+    "stem": "9926_39117_3795456158",
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Sedara Burson": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.25,
+      "fear": 0.75,
+      "sadness": 1.75
+    }
+  },
+  "5370_39117_2202446244": {
+    "file_path": "vad_wavs/5370_39117_2202446244.wav",
+    "file_name": "5370_39117_2202446244.wav",
+    "sample_rate": 16000,
+    "duration": 43.968,
+    "stem": "5370_39117_2202446244",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "high",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "none",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "medium"
+    },
+    "avg_score": {
+      "anger": 0.5,
+      "fear": 1.25,
+      "sadness": 2.0
+    }
+  },
+  "8447_53113_1602028800": {
+    "file_path": "vad_wavs/8447_53113_1602028800.wav",
+    "file_name": "8447_53113_1602028800.wav",
+    "sample_rate": 16000,
+    "duration": 15.226,
+    "stem": "8447_53113_1602028800",
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "none",
+      "neutral": "high",
+      "sadness": "low"
+    },
+    "Michelle Lyn": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "Yared Alemu": {
+      "fear": "medium",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "high"
+    },
+    "avg_score": {
+      "anger": 0.6666666666666666,
+      "fear": 1.6666666666666667,
+      "sadness": 2.3333333333333335
+    }
+  },
+  "4205_39117_3390161853": {
+    "file_path": "vad_wavs/4205_39117_3390161853.wav",
+    "file_name": "4205_39117_3390161853.wav",
+    "sample_rate": 16000,
+    "duration": 13.452,
+    "stem": "4205_39117_3390161853",
+    "Michelle Lyn": {
+      "fear": "low",
+      "anger": "medium",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Sedara Burson": {
+      "fear": "low",
+      "anger": "none",
+      "happy": "high",
+      "neutral": "low",
+      "sadness": "none"
+    },
+    "Yared Alemu": {
+      "fear": "low",
+      "anger": "low",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "Pegah Moghaddam": {
+      "fear": "low",
+      "anger": "high",
+      "happy": "none",
+      "neutral": "none",
+      "sadness": "low"
+    },
+    "avg_score": {
+      "anger": 1.5,
+      "fear": 1.0,
+      "sadness": 0.75
+    }
+  }
+}

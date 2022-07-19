@@ -1,0 +1,16 @@
+/.mypy_cache/
+/.nox/
+/.pretrained/
+/artifacts/
+/checkpoints/
+/from_paperspace/
+/lightning_logs/
+/pretrained_models/
+/emonet.egg-info/
+/wandb/
+/wav2vec2_checkpoints/
+/notebooks/work-in-progress/
+/notebooks/.ipynb_checkpoints/
+/notebooks/lightning_logs/
+/notebooks/pretrained_models/
+/notebooks/wav2vec2_checkpoints/
