@@ -27,7 +27,7 @@ def docs(session):
     """Build package documentation."""
     # session.install('.')
     # session.install('sphinx', 'furo', 'myst-parser')
-    session.run('sphinx-apidoc', PROJECT, '-o', 'docs/source/')
+    session.run('sphinx-apidoc', '--separate', PROJECT, '-o', 'docs/source/')
     session.run('sphinx-build', '-b', 'html', 'docs/source/', 'docs/build/html')
 
 

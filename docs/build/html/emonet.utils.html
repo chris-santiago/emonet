@@ -1,0 +1,560 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>emonet.utils module &#8212; emonet</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="emonet.wav_splitter module" href="emonet.wav_splitter.html" />
+    <link rel="prev" title="emonet.transforms module" href="emonet.transforms.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">emonet</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="quickstart.html">
+   Quickstart
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="modules.html">
+   emonet
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="emonet.html">
+     emonet package
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.batch_resample.html">
+       emonet.batch_resample module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.batch_vad.html">
+       emonet.batch_vad module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.data_loader.html">
+       emonet.data_loader module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.data_prep.html">
+       emonet.data_prep module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.data_setup.html">
+       emonet.data_setup module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.dir_setup.html">
+       emonet.dir_setup module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.get_weights.html">
+       emonet.get_weights module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.log.html">
+       emonet.log module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.m4a_to_wav.html">
+       emonet.m4a_to_wav module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.model.html">
+       emonet.model module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.modules.html">
+       emonet.modules module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.plots.html">
+       emonet.plots module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.score.html">
+       emonet.score module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.train.html">
+       emonet.train module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.transforms.html">
+       emonet.transforms module
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       emonet.utils module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="emonet.wav_splitter.html">
+       emonet.wav_splitter module
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/chris-santiago/emonet">
+   Github Repo
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/emonet.utils.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>emonet.utils module</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="module-emonet.utils">
+<span id="emonet-utils-module"></span><h1>emonet.utils module<a class="headerlink" href="#module-emonet.utils" title="Permalink to this headline">#</a></h1>
+<p>More miscellaneous functions that probably fit better somewhere else.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.play_audio">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">play_audio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waveform</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">torch.Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#play_audio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.play_audio" title="Permalink to this definition">#</a></dt>
+<dd><p>Play an audio signal within an IPython notebook.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>waveform</strong> (<em>torch.Tensor</em>) – Audio signal.</p></li>
+<li><p><strong>sample_rate</strong> (<em>int</em>) – Audio signal sample rate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>None</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.print_stats">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">print_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waveform</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#print_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.print_stats" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.get_metadata">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#get_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.get_metadata" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.async_file_operation">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">async_file_operation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#async_file_operation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.async_file_operation" title="Permalink to this definition">#</a></dt>
+<dd><p>Asynchronously apply a function on a list of files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>files</strong> (<em>List</em>) – Files to apply function to.</p></li>
+<li><p><strong>func</strong> (<em>Callable</em>) – Function to apply.</p></li>
+<li><p><strong>max_workers</strong> (<em>int</em>) – Maximum number of concurrent threads.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>None</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.get_rating_encoder">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">get_rating_encoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ratings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">speechbrain.dataio.encoder.CategoricalEncoder</span></span></span><a class="reference internal" href="_modules/emonet/utils.html#get_rating_encoder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.get_rating_encoder" title="Permalink to this definition">#</a></dt>
+<dd><p>Get a categorical encoder for emotion severity labels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ratings</strong> (<em>List[str]</em>) – List containing all possible categorical ratings.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>CategoricalEncoder</em> – A fitted Speechbrain CategoricalEncoder object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.binarize_ratings">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">binarize_ratings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ratings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">torch.Tensor</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">torch.Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/emonet/utils.html#binarize_ratings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.binarize_ratings" title="Permalink to this definition">#</a></dt>
+<dd><p>Convert emotion severity levels to binary.</p>
+<p>Assigns <cite>None</cite> and <cite>Low</cite> (0 and 1, respectively) to <cite>0</cite>; assigns <cite>Med</cite> and <cite>High</cite>
+(2 and 3, respectively) to <cite>1</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ratings</strong> (<em>Union[int, List, torch.Tensor]</em>) – Rating(s) to convert; expects {0, 1, 2, 3}.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>Union[int, torch.Tensor]</em> – Binarized label(s).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.binarize_labels">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">binarize_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="reference internal" href="_modules/emonet/utils.html#binarize_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.binarize_labels" title="Permalink to this definition">#</a></dt>
+<dd><p>Convert all labels within a dictionary to binary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>labels</strong> (<em>Dict</em>) – A dictionary mapping a specific file or sample to its respective emotion severity label.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>Dict</em> – The original <cite>labels</cite> dictionary with binarized labels.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.weights_to_binary">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">weights_to_binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">weights</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#weights_to_binary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.weights_to_binary" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.get_sample">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">get_sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">torch.Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/emonet/utils.html#get_sample"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.get_sample" title="Permalink to this definition">#</a></dt>
+<dd><p>Read an audio signal from a file and resample, if necessary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> (<em>pathlib.Path</em>) – Path to audio file.</p></li>
+<li><p><strong>sample_rate</strong> (<em>int</em>) – Desired sample rate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>Tuple[torch.Tensor, int]</em> – Audio signal (potentially resampled) and output sample rate.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.get_random_segment">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">get_random_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wav</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">torch.Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">16000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">torch.Tensor</span></span></span><a class="reference internal" href="_modules/emonet/utils.html#get_random_segment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.get_random_segment" title="Permalink to this definition">#</a></dt>
+<dd><p>Get a random n-second sample from an audio signal.
+:Parameters: * <strong>wav</strong> (<em>torch.Tensor</em>) – Original audio signal.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>seconds</strong> (<em>int</em>) – Desired duration of random sample.</p></li>
+<li><p><strong>sample_rate</strong> (<em>int</em>) – Original audio sampling rate.</p></li>
+</ul>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><em>torch.Tensor</em> – A random segment of the original audio signal.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.channel1to3">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">channel1to3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">torch.Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">torch.Tensor</span></span></span><a class="reference internal" href="_modules/emonet/utils.html#channel1to3"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.channel1to3" title="Permalink to this definition">#</a></dt>
+<dd><p>Convert a single-channel spectrogram to 3-channels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>t</strong> (<em>torch.Tensor</em>) – 3-d spectrogram (C, H, W)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>torch.Tensor</em> – A 3-channel version of original spectrogram, where new channels are copies of original.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.ohe_labels">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">ohe_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_classes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#ohe_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.ohe_labels" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.decode_ohe">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">decode_ohe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#decode_ohe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.decode_ohe" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.from_json">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="reference internal" href="_modules/emonet/utils.html#from_json"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.from_json" title="Permalink to this definition">#</a></dt>
+<dd><p>Read metadata from json file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="emonet.utils.to_json">
+<span class="sig-prename descclassname"><span class="pre">emonet.utils.</span></span><span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/emonet/utils.html#to_json"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#emonet.utils.to_json" title="Permalink to this definition">#</a></dt>
+<dd><p>Write metadata to json file.</p>
+</dd></dl>
+
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="emonet.transforms.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">emonet.transforms module</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="emonet.wav_splitter.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">emonet.wav_splitter module</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Chris Santiago<br/>
+  
+      &copy; Copyright 2021, Chris Santiago.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

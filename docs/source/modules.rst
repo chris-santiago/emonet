@@ -1,5 +1,5 @@
 emonet
-=======
+======
 
 .. toctree::
    :maxdepth: 4
