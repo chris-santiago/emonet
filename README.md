@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/515677040.svg)](https://zenodo.org/badge/latestdoi/515677040)
 
-A library to model negative emotion severity in patients with adverse childhood events (ACE).
+A package to model negative emotion severity in patients with adverse childhood events (ACE).
 
 **Contributors**: [@chris-santiago](https://github.com/chris-santiago), [@gonzalezeric](https://github.com/gonzalezeric), [@costargc](https://github.com/costargc)
 
